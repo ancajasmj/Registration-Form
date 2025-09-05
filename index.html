@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Registration</h1>
+        <form id="registrationForm">
+            <div>
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" required>
+                <div id="firstNameError" class="error"></div>
+            </div>
+            <div>
+                <label for="middleName">Middle Name</label>
+                <input type="text" id="middleName">
+            </div>
+            <div>
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" required>
+                <div id="lastNameError" class="error"></div>
+            </div>
+            <div>
+                <label for="suffix">Suffix</label>
+                <input type="text" id="suffix" placeholder="e.g., Jr., Sr.">
+            </div>
+            <div>
+                <label for="contactNo">Contact Number *</label>
+                <input type="tel" id="contactNo" required>
+                <div id="contactNoError" class="error"></div>
+            </div>
+            <div>
+                <label for="email">Email *</label>
+                <input type="email" id="email" required>
+                <div id="emailError" class="error"></div>
+            </div>
+            <div>
+                <label for="course">Course *</label>
+                <select id="course" required>
+                    <option value="">Select Course</option>
+                    <option value="Computer Engineering Technology">Computer Engineering Technology</option>
+                    <option value="Electrical Engineering Technology">Electrical Engineering Technology</option>
+                    <option value="Mechanical Engineering Technology">Mechanical Engineering Technology</option>
+                    <option value="Electronics Engineering Technology">Electronics Engineering Technology</option>
+                </select>
+                <div id="courseError" class="error"></div>
+            </div>
+            <div>
+                <label for="batch">Batch *</label>
+                <select id="batch" required>
+                    <option value="">Select Batch</option>
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                </select>
+                <div id="batchError" class="error"></div>
+            </div>
+            <div>
+                <label for="id">ID *</label>
+                <input type="text" id="id" required>
+                <div id="idError" class="error"></div>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
